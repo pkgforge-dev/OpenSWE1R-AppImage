@@ -36,3 +36,4 @@ cmake .. \
     -DCMAKE_C_FLAGS="-Wno-incompatible-pointer-types" \
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 make -j$(nproc)
+mv -v openswe1r ../../AppDir/bin
