@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=OpenSWE1R
+Comment="An Open-Source port of the 1999 Game Star Wars Episode 1: Racer"
+Icon=openswe1r
+Exec=openswe1r
+Terminal=false
+StartupWMClass=openswe1r
+Categories=Game;Racing;
