@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/OpenSWE1R-AppImage)](https://github.com/pkgforge-dev/OpenSWE1R-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/Link4Electronics/OpenSWE1R-AppImage/blob/main/AppDir/openswe1r.png" width="128" />
+  <img src="https://github.com/pkgforge-dev/OpenSWE1R-AppImage/blob/main/AppDir/openswe1r.png" width="128" />
 </p>
 
 
@@ -17,9 +17,16 @@
 
 </div>
 
+### ⚠️ Must enable AMD-V/SVM or Intel VT-x/d in BIOS (arm64 uses libunicorn no need for that)
+### ⚠️ Using GOG release, move `data` and `SWEP1RCR.EXE` to `~/.local/share/openswe1r`
+### ⚠️ Must lowercase everything inside `data` and `swep1rcr.exe`
+### ⚠️ From GOG version, move `config` and `player` from `__support/save/data/` to `~/.local/share/openswe1r/data`
+### ⚠️ Use `gamescope -W xxxx -H xxxx` to change resolution if you want
+### ⚠️ It does have known audio [issues](https://github.com/OpenSWE1R/openswe1r/issues/47), suggest to disable audio in options
+
 ---
 
-AppImage made using [sharun](https://github.com/VHSgunzo/sharun) and its wrapper [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
+AppImage made using [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
 
 **This AppImage bundles everything and it should work on any Linux distro, including old and musl-based ones.**
 
