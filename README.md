@@ -21,7 +21,7 @@
 ### ⚠️ Using GOG release, move `data` and `SWEP1RCR.EXE` to `~/.local/share/openswe1r`
 ### ⚠️ Must lowercase everything inside `data` and `swep1rcr.exe`
 ### ⚠️ From GOG version, move `config` and `player` from `__support/save/data/` to `~/.local/share/openswe1r/data`
-### ⚠️ Use `gamescope` to change resolution if you want
+### ⚠️ Use `gamescope -W xxxx -H xxxx` to change resolution if you want
 ### ⚠️ It does have known audio [issues](https://github.com/OpenSWE1R/openswe1r/issues/47), suggest to disable audio in options
 
 ---
