@@ -1,0 +1,4 @@
+#!/bin/sh
+dir=$DATADIR/openswe1r
+mkdir -p "$dir"
+cd "$dir"

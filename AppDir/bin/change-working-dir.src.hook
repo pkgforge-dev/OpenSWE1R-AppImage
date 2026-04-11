@@ -1,4 +1,0 @@
-#!/bin/false
-dir=${XDG_DATA_HOME:-~/.local/share}/openswe1r
-mkdir -p "$dir"
-cd "$dir"
