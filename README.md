@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/OpenSWE1R-AppImage)](https://github.com/pkgforge-dev/OpenSWE1R-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/Link4Electronics/OpenSWE1R-AppImage/blob/main/AppDir/openswe1r.png" width="128" />
+  <img src="https://github.com/pkgforge-dev/OpenSWE1R-AppImage/blob/main/AppDir/openswe1r.png" width="128" />
 </p>
 
 
