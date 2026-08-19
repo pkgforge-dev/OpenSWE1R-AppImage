@@ -19,7 +19,7 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
-echo "Making nightly build of OpenSWE1R..."
+echo "Building OpenSWE1R..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/OpenSWE1R/openswe1r"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
