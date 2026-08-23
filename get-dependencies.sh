@@ -7,17 +7,16 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    cmake    \
-    enet     \
-    glew     \
-    libdecor \
-    openal   \
-    sdl2     \
+    cmake   \
+    enet    \
+    glew    \
+    openal  \
+    sdl2    \
     unicorn
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano
+get-debloated-pkgs --add-common --prefer-nano libdecor-mini
 
 echo "Building OpenSWE1R..."
 echo "---------------------------------------------------------------"
