@@ -22,7 +22,7 @@ echo "Building OpenSWE1R..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/OpenSWE1R/openswe1r"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
-git clone "$REPO" ./openswe1r
+git clone --depth 1 "$REPO" ./openswe1r
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
