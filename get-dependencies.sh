@@ -7,11 +7,11 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    cmake   \
-    enet    \
-    glew    \
-    openal  \
-    sdl2    \
+    cmake       \
+    enet        \
+    glew        \
+    openal      \
+    sdl2-compat \
     unicorn
 
 echo "Installing debloated packages..."
@@ -26,13 +26,7 @@ git clone --depth 1 "$REPO" ./openswe1r
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
-cd ./openswe1r
-mkdir -p build && cd build
 [ "$ARCH" = "x86_64" ] && VM_STATUS="ON" || VM_STATUS="OFF"
-cmake .. \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DUSE_VM="$VM_STATUS" \
-    -DCMAKE_C_FLAGS="-Wno-incompatible-pointer-types" \
-    -DCMAKE_POLICY_VERSION_MINIMUM=3.5
-make -j$(nproc)
-mv -v openswe1r ../../AppDir/bin
+cmake -S ./openswe1r -B build -DCMAKE_BUILD_TYPE=Release -DUSE_VM="$VM_STATUS" -DCMAKE_C_FLAGS="-Wno-incompatible-pointer-types" -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+cmake --build build -j$(nproc)
+mv -v build/openswe1r ./AppDir/bin
