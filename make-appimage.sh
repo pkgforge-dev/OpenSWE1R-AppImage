@@ -10,7 +10,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
-quick-sharun ./AppDir/bin/openswe1r
+quick-sharun ./AppDir/bin/openswe1r /usr/lib/libopenal.so*
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
